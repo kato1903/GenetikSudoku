@@ -240,14 +240,14 @@ sudokuGercek=[
 7,3,2,1,4,8,5,9,6]
 
 
-sudoku2 = []
+sudoku = []
 
 file_handle = open('sudoku.txt', 'r')
 lines_list = file_handle.readlines()
 for j in range(0,9):
     cols = lines_list[j].split()
     for i in range(0,9):
-        sudoku2.append(int(cols[i]))
+        sudoku.append(int(cols[i]))
 sabit = []
 
 for i in range(0,81):
